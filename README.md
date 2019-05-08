@@ -1,4 +1,4 @@
-# Visbility Graphs in Python
+# Visibility Graphs in Python
 
 
 Different implementations for computing the natural visibility graph (NVG) \[1\]

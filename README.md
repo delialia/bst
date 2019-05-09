@@ -26,7 +26,7 @@ and compare their computation time.
 
 ## About the paper "Efficient On-line Computation of Visibility Graphs"
 
-All the code related to this paper and necessary to run the experiments is available here.
+All the code related to [this](https://arxiv.org/abs/1905.03204) paper and necessary to run the experiments is available here.
 The names of the python scripts are self-explanatory. For example,
 run_exp01.py relates to the first experiment described in the paper and its results (results_exp01.csv), included in the
 folder "results", can be displayed with plot_exp01_Figure05.py (Figure 5 of the paper included in the folder "images").
@@ -49,7 +49,10 @@ folder "results", can be displayed with plot_exp01_Figure05.py (Figure 5 of the 
 	Chaos 25, 083105 (2015); doi: 10.1063/1.4927835
 
 \[5\]: "Efficient On-line Computation of Visibility Graphs"
- Delia Fano Yela, Florian Thalmann
+ Delia Fano Yela, Florian Thalmann, Vincenzo Nicosia, Dan Stowell and Mark Sandler,
+ arXiv preprint arXiv:1905.03204, 2019 :
+ https://arxiv.org/abs/1905.03204
+
 
 #### AUTHOR: Delia Fano Yela
 #### DATE:  May 2019

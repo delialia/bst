@@ -1,4 +1,4 @@
-"Type","Computation Time (s)","Visibility","Method"
+"Type","computation time (s)","visibility","Method"
 "speech",2.13888,"nvg","basic"
 "speech",0.22686,"nvg","dc"
 "speech",0.55231,"nvg","bt"

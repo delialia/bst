@@ -1,7 +1,13 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# AUTHOR: Delia Fano Yela
+# DATE:  March 2020
+# CONTACT: d.fanoyela@qmul.ac.uk
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-import SeabornFig2Grid as sfg
+from dependencies import SeabornFig2Grid as sfg
 import matplotlib.gridspec as gridspec
 
 from matplotlib import rcParams

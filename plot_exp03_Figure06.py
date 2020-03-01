@@ -1,3 +1,9 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# AUTHOR: Delia Fano Yela
+# DATE:  March 2020
+# CONTACT: d.fanoyela@qmul.ac.uk
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 import seaborn as sns
 import matplotlib
 matplotlib.rcParams['text.usetex'] = True

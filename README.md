@@ -1,3 +1,4 @@
+
 # Visibility Graphs in Python
 
 
@@ -24,16 +25,17 @@ In the " example.py "  file one can find an example of how to call the different
 and compare their computation time.
 
 
-## About the paper "Efficient On-line Computation of Visibility Graphs"
+## About the paper "Online visibility graphs: Encoding visibility in a binary search tree"
 
-All the code related to [this](https://arxiv.org/abs/1905.03204) paper and necessary to run the experiments is available here.
+
+All the code related to [this](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023069) paper and necessary to run the experiments is available here.
 The names of the python scripts are self-explanatory. For example,
 run_exp01.py relates to the first experiment described in the paper and its results (results_exp01.csv), included in the
-folder "results", can be displayed with plot_exp01_Figure05.py (Figure 5 of the paper included in the folder "images").
-
+folder "results", can be displayed with plot_exp01_Figure04.py.
 
 
 ## References
+
 \[1\]:"From time series to complex networks: the visibility graph"
  	Lucas Lacasa, Bartolo Luque, Fernando Ballesteros, Jordi Luque, Juan C. Nuno
  	PNAS, vol. 105, no. 13 (2008) 4972-4975
@@ -48,15 +50,31 @@ folder "results", can be displayed with plot_exp01_Figure05.py (Figure 5 of the 
 	Xin Lan, Hongming Mo, Shiyu Chen, Qi Liu, and Yong decending
 	Chaos 25, 083105 (2015); doi: 10.1063/1.4927835
 
-\[5\]: "Efficient On-line Computation of Visibility Graphs"
+\[5\]: "Online visibility graphs: Encoding visibility in a binary search tree"
  Delia Fano Yela, Florian Thalmann, Vincenzo Nicosia, Dan Stowell and Mark Sandler,
- arXiv preprint arXiv:1905.03204, 2019 :
- https://arxiv.org/abs/1905.03204
+ Physical Review Research, (2020) : https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023069
+
+** If you use this work for your research please cite : **
+ `@article{fanoyela20,
+  title = {Online visibility graphs: Encoding visibility in a binary search tree},
+  author = {Fano Yela, Delia and Thalmann, Florian and Nicosia, Vincenzo and Stowell, Dan and Sandler, Mark},
+  journal = {Phys. Rev. Research},
+  volume = {2},
+  issue = {2},
+  pages = {023069},
+  numpages = {9},
+  year = {2020},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevResearch.2.023069},
+  url = {https://link.aps.org/doi/10.1103/PhysRevResearch.2.023069}
+}`
+
 
 
 #### AUTHOR: Delia Fano Yela
-#### DATE:  May 2019
-#### CONTACT: d.fanoyela@qmul.ac.uk
+#### DATE:  April 2020
+#### CONTACT: d.fanoyela@qmul.ac.uk and most recently : delia@chordify.net
 
 ## Disclaimer:
 The author takes no responsability for this code. The code is checked for bugs but the author gives no guarantees there will be none left. The code has been optimised up to the necessary point for a research study.

@@ -1,9 +1,3 @@
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# AUTHOR: Delia Fano Yela
-# DATE:  March 2020
-# CONTACT: d.fanoyela@qmul.ac.uk
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 import seaborn as sns
 import matplotlib
 matplotlib.rcParams['text.usetex'] = True
@@ -13,7 +7,7 @@ from numpy import mean
 
 
 
-df = pd.read_csv('results/results_exp03.csv') # merge.txt to .csv
+df = pd.read_csv('results_exp03.csv') # merge.txt to .csv
 
 colors = [ "amber",  "windows blue","faded green" ,"greyish", "dusty purple"]
 
@@ -45,4 +39,4 @@ leg.set_title(new_title)
 
 
 plt.savefig('plot_exp03.pdf')
-# plt.show()
+plt.show()

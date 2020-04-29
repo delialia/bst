@@ -1,13 +1,7 @@
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# AUTHOR: Delia Fano Yela
-# DATE:  March 2020
-# CONTACT: d.fanoyela@qmul.ac.uk
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from dependencies import SeabornFig2Grid as sfg
+import SeabornFig2Grid as sfg
 import matplotlib.gridspec as gridspec
 from collections import OrderedDict
 
@@ -17,7 +11,7 @@ rcParams.update({'figure.autolayout': True})
 sns.set(style="white",font_scale = 2.5, font = "Times New Roman")
 
 #Series samples:
-df_series = pd.read_csv('sample_data/samples_spfn.csv')
+df_series = pd.read_csv('samples_spfn.csv')
 
 ds = {"color" : "k"}
 s = sns.FacetGrid(df_series, col="type", sharey = False, sharex = False, hue_kws=ds)
@@ -44,7 +38,7 @@ for i in xrange(ax.shape[0]):
             ax[i,j].set_ylabel('y')
 
 #  Computation times
-df = pd.read_csv('results/results_exp02.csv') # unify finance.txt and speech.txt
+df = pd.read_csv('results_exp02.csv') # unify finance.txt and speech.txt
 df["Method"] = df["Method"].map({'basic': 'Basic', 'dc': 'DC', 'bt': 'BST'})
 
 
@@ -88,4 +82,4 @@ mg1 = sfg.SeabornFig2Grid(g, fig, gs[1])
 
 
 fig.savefig('plot_exp02.jpg')
-# plt.show()
+plt.show()

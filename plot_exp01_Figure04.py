@@ -1,26 +1,22 @@
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# AUTHOR: Delia Fano Yela
-# DATE:  March 2020
-# CONTACT: d.fanoyela@qmul.ac.uk
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from dependencies import SeabornFig2Grid as sfg
+import SeabornFig2Grid as sfg
 import matplotlib.gridspec as gridspec
 
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
 
-sns.set(style="white", font_scale=2, font = "Times New Roman")
-df_series = pd.read_csv('sample_data/series.csv')
+sns.set(style="white", font_scale=2, font = "Times New Roman") #font_scale=1.2
+df_series = pd.read_csv('series.csv')
 
 ds = {"color" : "k"}
 s = sns.FacetGrid(df_series, col="type", sharey = False, sharex = False, hue_kws=ds)
 kws = dict(linewidth=.5)
 s.map(plt.plot, "y", **kws)
 
+# titles = ['Random Series', 'Random Walk Series', 'Conway Series']
 titles = ['\t (a)', '\t (b)', ' \t (c)']
 
 axes = s.axes.flatten()
@@ -42,7 +38,7 @@ axes[0].set_ylabel('y')
 
 
 #----------------------------------------------------------------------------------------------------
-df = pd.read_csv('results/results_exp01.csv')
+df = pd.read_csv('results_exp01.csv') # manually go from .txt to .csv
 
 df["Method"] = df["Method"].map({'basic': 'Basic', 'dc': 'DC', 'bt':'BST'})
 
@@ -50,7 +46,7 @@ df["Method"] = df["Method"].map({'basic': 'Basic', 'dc': 'DC', 'bt':'BST'})
 # df_plot = df.groupby(['Method', "series size n", "visibility", "series_type"]).mean()
 # df_plot.to_csv('df_mean.csv',index=True)
 
-df_p2 = pd.read_csv('sample_data/df_mean.csv')
+df_p2 = pd.read_csv('df_mean.csv')
 d = {"ls":["--","-.","-"]}
 #----------------------------------------------------------------------------------------------------
 g = sns.FacetGrid(df_p2, col="series_type", row="visibility", hue="Method",
@@ -93,5 +89,5 @@ mg1 = sfg.SeabornFig2Grid(g, fig, gs[1:3])
 
 
 #----------------------------------------------------------------------------------------------------
-fig.savefig('plot_exp01.jpg')
-# plt.show()
+fig.savefig('plot_exp01.jpg') #,pad_inches=5)#) bbox_inches='tight') #, pad_inches=0)
+plt.show()

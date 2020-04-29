@@ -53,9 +53,8 @@ folder "results", can be displayed with plot_exp01_Figure04.py.
 \[5\]: "Online visibility graphs: Encoding visibility in a binary search tree"
  Delia Fano Yela, Florian Thalmann, Vincenzo Nicosia, Dan Stowell and Mark Sandler,
  Physical Review Research, (2020) : https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023069
-
 **If you use this work for your research please cite:**
-
+```
  @article{fanoyela20,
   title = {Online visibility graphs: Encoding visibility in a binary search tree},
   author = {Fano Yela, Delia and Thalmann, Florian and Nicosia, Vincenzo and Stowell, Dan and Sandler, Mark},
@@ -70,6 +69,7 @@ folder "results", can be displayed with plot_exp01_Figure04.py.
   doi = {10.1103/PhysRevResearch.2.023069},
   url = {https://link.aps.org/doi/10.1103/PhysRevResearch.2.023069}
 }
+```
 
 
 

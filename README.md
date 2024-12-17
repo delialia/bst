@@ -76,7 +76,7 @@ folder "results", can be displayed with plot_exp01_Figure04.py.
 
 #### AUTHOR: Delia Fano Yela
 #### DATE:  April 2020
-#### CONTACT: d.fanoyela@qmul.ac.uk and most recently : delia@chordify.net
+#### CONTACT: d.fanoyela@qmul.ac.uk and most recently : delia.fano.yela@ri.se
 
 ## Disclaimer:
 The author takes no responsability for this code. The code is checked for bugs but the author gives no guarantees there will be none left. The code has been optimised up to the necessary point for a research study.
